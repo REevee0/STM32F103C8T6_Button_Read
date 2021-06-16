@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"buton_led\startup_stm32f103xb.o"
+"buton_led\main.o"
+"buton_led\stm32f1xx_it.o"
+"buton_led\stm32f1xx_hal_msp.o"
+"buton_led\stm32f1xx_hal_gpio_ex.o"
+"buton_led\stm32f1xx_hal_tim.o"
+"buton_led\stm32f1xx_hal_tim_ex.o"
+"buton_led\stm32f1xx_hal.o"
+"buton_led\stm32f1xx_hal_rcc.o"
+"buton_led\stm32f1xx_hal_rcc_ex.o"
+"buton_led\stm32f1xx_hal_gpio.o"
+"buton_led\stm32f1xx_hal_dma.o"
+"buton_led\stm32f1xx_hal_cortex.o"
+"buton_led\stm32f1xx_hal_pwr.o"
+"buton_led\stm32f1xx_hal_flash.o"
+"buton_led\stm32f1xx_hal_flash_ex.o"
+"buton_led\stm32f1xx_hal_exti.o"
+"buton_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Buton_Led\Buton_Led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Buton_Led.map" -o Buton_Led\Buton_Led.axf
